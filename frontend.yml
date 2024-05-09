@@ -1,0 +1,7 @@
+- name: install nginx
+  hosts: all
+  become: true
+  tasks:
+    ansible.builtin.dnf:
+        name: nginx
+        state: present
