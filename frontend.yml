@@ -1,7 +1,7 @@
-- name: install nginx
+- name: Frontend Playbook
   hosts: all
   become: true
   tasks:
     ansible.builtin.dnf:
-        name: nginx
-        state: present
+       name: nginx
+       state: present
