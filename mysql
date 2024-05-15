@@ -1,4 +1,5 @@
 - name: Installing MySQL Server
+  become: true
   ansible.builtin.dnf:
     name: mysql-server
     state: present
